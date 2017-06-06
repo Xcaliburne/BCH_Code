@@ -10,7 +10,6 @@ else
              0 0 0 0 6 2 4 ; 
              0 0 0 0 0 0 3 ; 
              0 0 0 0 0 0 1];
-    result = table(min(coef1 + 1, coef2 + 1), max(coef1 + 1, coef2 + 1));
+    result = table(min(coef1, coef2), max(coef1, coef2));
 end
 end
-
