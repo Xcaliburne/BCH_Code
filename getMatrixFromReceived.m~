@@ -1,0 +1,12 @@
+function [result] = getMatrixFromReceived(receivedExp, t)
+result = zeros(2 * t);
+sizeFunc = size(receivedExp);
+result(1, 1) = receivedExp(1);
+
+for i = 1:(2 * t)
+    for j = 2:sizeFunc(2)
+        result(1, i) = additionTable(result(i, 1), i * receivedExp(j))
+    end
+end
+
+end

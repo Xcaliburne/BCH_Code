@@ -1,0 +1,3 @@
+function [result] = getCorrectedWord(rootsIndexes, word, n)
+    result = zeros(n)
+end
