@@ -6,7 +6,7 @@ function com = comatrix(M, n)
             M_tmp = M;
             M_tmp(y,:) = [];
             M_tmp(:,x) = [];
-            com(y,x) = alpha_det(M_tmp, n);;
+            com(y,x) = alpha_det(M_tmp, n);
        end
     end
 end
